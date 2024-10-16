@@ -9,7 +9,7 @@ export class EmployeeService {
   private url = 'http://localhost:5200';
   employees$ = signal<Employee[]>([]);
   employee$ = signal<Employee>({} as Employee);
-  
+ 
   constructor(private httpClient: HttpClient) { }
 
   private refreshEmployees() {
